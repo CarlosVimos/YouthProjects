@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:background="#FFFFFF"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:id="@+id/relative_layout">
+
+        <TextView
+            android:id="@+id/list_evs_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/title_project"
+            android:textColor="#786f6f"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="50dp"
+            android:textSize="17dp"
+            android:textStyle="bold"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/list_evs_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/relative_layout"
+        android:text="@string/place_project"
+        android:layout_marginTop="18dp"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        />
+
+    <TextView
+        android:id="@+id/list_evs_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/list_evs_place"
+        android:text="@string/date_project"
+        android:layout_marginTop="18dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_list_details"
+        android:id="@+id/click_for_link"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="33dp" />
+
+
+</RelativeLayout>
