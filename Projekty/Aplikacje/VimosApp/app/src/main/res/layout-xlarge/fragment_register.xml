@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/new_blue_bck_light"
+    >
+
+
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo_vimos_with_text_white"
+        android:id="@+id/iv_v_logo_id"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/content_description"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:layout_below="@+id/edit_text_email_id"
+        android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/button_register"
+            android:background="@drawable/btn_login"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/edit_text_password"
+            android:layout_marginTop="55dp"
+            android:textColor="@color/white"
+            android:text="@string/register" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFF"
+        android:text="@string/tv_step1"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_email_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:layout_marginTop="51dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/iv_v_logo_id"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

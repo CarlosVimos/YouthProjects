@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_preference_red_chat_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.karol.vimos.vimosapp.ui.activities.PreferenceRedChatUserActivity"
+    android:background="@drawable/new_blue_bck"
+    >
+
+
+    <TextView
+        android:id="@+id/tv_sett_red_chat_title_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_red_title"
+        android:textColor="#FFF"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_sett_red_chat_q1_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_spec"
+        android:textColor="#FFF"
+        android:layout_below="@+id/tv_sett_red_chat_title_id"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="25dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_sett_red_chat_q2_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_hobby"
+        android:textColor="#FFF"
+        android:layout_below="@+id/tv_sett_red_chat_q1_id"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="65dp"
+        android:layout_alignParentEnd="true"
+        />
+
+    <EditText
+        android:id="@+id/et_sett_red_chat_hobby_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/write_here"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="#FFF"
+        android:textColor="#FFF"
+        android:layout_below="@+id/tv_sett_red_chat_q2_id"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_sett_red_chat_info1_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_sett_red_chat_hobby_id"
+        android:text="@string/str_settings_red_info1"
+        android:textColor="#FFF"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_sett_red_chat_info2_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_sett_red_chat_info1_id"
+        android:text="@string/str_settings_red_info2"
+        android:textColor="#FFF"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_sett_red_chat_here_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_sett_red_chat_info2_id"
+        android:text="@string/click_below"
+        android:textColor="#FFF"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        />
+
+    <Button
+        android:id="@+id/btn_sett_red_chat_addhobby_id"
+        android:background="@drawable/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_sett_red_chat_here_id"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="85dp"
+        android:textColor="#FFFFFF"
+        android:text="@string/add"
+        android:onClick="addHobbyOnClick"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <fragment
+        android:id="@+id/mapBlueId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/rel_layout_welcome_panel_blue_maps_id"
+        android:visibility="gone"
+        android:background="#a3a1a1"
+        android:layout_alignParentTop="true"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_welcome_blue_id"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_layout_detection_red_blue_maps_id"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/red_400"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_detected_red_maps"
+            android:text="@string/tv_detection_red"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@color/grey_600"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:id="@+id/rel_layout_details_detection_id"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_details_to_nearest_id"
+            android:text="@string/tv_details_to_nearest"
+            android:textColor="@color/white"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_det_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_det_distance"
+            android:layout_below="@+id/tv_details_to_nearest_id"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/tv_details_distance_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_det_distance"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_det_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_details_distance_id"
+            android:text="@string/tv_det_time"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            />
+
+
+
+        <TextView
+            android:id="@+id/tv_details_time_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_det_time"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_stop_detection"
+        android:id="@+id/btn_stop_blue_detection_id"
+        android:background="@color/amber_100"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="50dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/tv_my_blue_location_id"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue_500"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+
+</RelativeLayout>

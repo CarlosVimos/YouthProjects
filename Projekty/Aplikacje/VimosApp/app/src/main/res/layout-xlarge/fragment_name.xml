@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/new_blue_bck_light">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo_vimos_with_text_white"
+        android:id="@+id/iv_name_v_logo_id"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/content_description"
+        />
+
+
+    <EditText
+        android:id="@+id/et_name_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_name"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:inputType="text"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_below="@+id/iv_name_v_logo_id"
+        android:layout_marginTop="55dp"
+        />
+
+
+
+        <Button
+            android:id="@+id/btn_set_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/et_name_id"
+            android:layout_marginTop="85dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="75dp"
+            android:background="@drawable/btn_login"
+            android:textColor="#FFFFFF"
+            android:text="@string/set_name" />
+
+        <Button
+            android:id="@+id/btn_go_to_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?attr/borderlessButtonStyle"
+            android:text=""
+            />
+
+        <TextView
+            android:id="@+id/tv_display_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_go_to_select"
+            android:layout_marginTop="50dp"
+            />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFF"
+        android:text="@string/tv_step3"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        />
+
+
+
+</RelativeLayout>

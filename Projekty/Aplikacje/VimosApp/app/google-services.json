@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "660721947004",
+    "firebase_url": "https://vimos-d7cff.firebaseio.com",
+    "project_id": "vimos-d7cff",
+    "storage_bucket": "vimos-d7cff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660721947004:android:2d84abe1d1dbda44",
+        "android_client_info": {
+          "package_name": "com.karol.vimos.vimosapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660721947004-of9hu8kkseppp3oncui9g6f97u5d52ud.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.karol.vimos.vimosapp",
+            "certificate_hash": "B5F5688E0B104E7E26DC5538A0A095330E491B2E"
+          }
+        },
+        {
+          "client_id": "660721947004-9b60a520k54oiuqjj4chr959inootppa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQgdcavqHMV_v52jbBvbJ_XMuCrgdTDIY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660721947004-9b60a520k54oiuqjj4chr959inootppa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

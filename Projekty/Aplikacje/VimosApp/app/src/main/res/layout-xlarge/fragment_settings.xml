@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!--Radar Layout-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel_layout_radar_settings"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rectangle_white"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radar_settings"
+                android:text="R A D A R"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_radius_detection"
+                android:id="@+id/tv_radius_detection_settings_id"
+                android:layout_below="@+id/radar_settings"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/blue_400"
+                android:textStyle="bold"
+                android:id="@+id/tvSeekbarValueId"
+                android:layout_below="@+id/tv_radius_detection_settings_id"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+
+                />
+
+
+            <SeekBar
+                android:id="@+id/seekBarRadiusId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvSeekbarValueId"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:max="1000" />
+
+
+
+
+        </RelativeLayout>
+
+        <!--Choose Object To Detect Layout-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel_layout_detection_settings"
+            android:layout_below="@id/rel_layout_radar_settings"
+            android:background="@drawable/rectangle_white"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_type_of_object_to_detect"
+                android:id="@+id/tv_set_det_object_id"
+                />
+
+
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_set_det_object_id"
+                android:layout_marginTop="@dimen/settings_switch_height"
+                android:id="@+id/switchRed"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_switch_red_text_id"
+                android:layout_toEndOf="@+id/switchRed"
+                android:layout_below="@+id/tv_set_det_object_id"
+                android:layout_marginTop="@dimen/settings_switch_height"
+                android:layout_marginStart="25dp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_settings_switch_red_id"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toEndOf="@+id/tv_switch_red_text_id"
+                android:layout_below="@+id/tv_set_det_object_id"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="@dimen/settings_switch_height"
+                />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switchRed"
+                android:id="@+id/switchGreen"
+                android:layout_marginTop="@dimen/settings_space_between_switch_height"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_switch_green_text_id"
+                android:layout_toEndOf="@+id/switchGreen"
+                android:layout_below="@+id/switchRed"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="@dimen/settings_space_between_switch_height"
+                />
+
+            <ImageView
+                android:id="@+id/iv_settings_switch_green_id"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toEndOf="@+id/tv_switch_red_text_id"
+                android:layout_below="@+id/switchRed"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="@dimen/settings_space_between_switch_height"
+                />
+
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switchGreen"
+                android:id="@+id/switchOrange"
+                android:layout_marginTop="@dimen/settings_space_between_switch_height"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_switch_orange_text_id"
+                android:layout_toEndOf="@+id/switchOrange"
+                android:layout_below="@+id/switchGreen"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="@dimen/settings_space_between_switch_height"
+                />
+
+            <ImageView
+                android:id="@+id/iv_settings_switch_orange_id"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toEndOf="@+id/tv_switch_red_text_id"
+                android:layout_below="@+id/switchGreen"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="@dimen/settings_space_between_switch_height"
+                />
+
+
+
+        </RelativeLayout>
+
+        <!--Lector Layout-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel_layout_lector_settings"
+            android:layout_below="@+id/rel_layout_detection_settings"
+            android:background="@drawable/rectangle_white"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_set_lector_language"
+                android:id="@+id/tv_lec"
+                />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_lec"
+                android:layout_marginTop="10dp"
+                android:id="@+id/switchLector"
+                />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switchLector"
+                android:layout_marginTop="5dp"
+                android:id="@+id/spinnerLectorId"
+
+                >
+
+
+            </Spinner>
+
+
+
+        </RelativeLayout>
+
+        <!--Passenger Communication Layout-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel_layout_passenger_settings_id"
+            android:layout_below="@+id/rel_layout_lector_settings"
+            android:background="@drawable/rectangle_white"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_title_psng_settings_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_text_psng_comm"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_set_hobby"
+                android:id="@+id/btnSetHobbyId"
+                android:textColor="#FFF"
+                android:background="@drawable/btn_login"
+                android:layout_below="@+id/tv_title_psng_settings_id"
+                android:layout_marginTop="25dp"
+                />
+
+
+        </RelativeLayout>
+
+        <!--User Informations: nick, name, hobby-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel_layout_settings_user_details_id"
+            android:layout_below="@+id/rel_layout_passenger_settings_id"
+            android:background="@drawable/rectangle_white"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            >
+
+
+            <TextView
+                android:id="@+id/tv_settings_user_account_title_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_settings_user_title_account_info"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/t_sett_user_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_settings_user_nick_info"
+                android:layout_below="@+id/tv_settings_user_account_title_id"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_settings_user_nick_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_settings_user_account_title_id"
+                android:layout_toEndOf="@+id/t_sett_user_nick"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="25dp"
+                android:textColor="@color/blue_500"
+                />
+
+            <TextView
+                android:id="@+id/t_sett_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t_sett_user_nick"
+                android:text="@string/tv_settings_user_name_info"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_settings_user_name_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t_sett_user_nick"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/t_sett_user_name"
+                android:textColor="@color/blue_500"
+                />
+
+            <TextView
+                android:id="@+id/t_sett_user_profession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t_sett_user_name"
+                android:text="@string/tv_settings_user_profession_info"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_settings_user_profession_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t_sett_user_name"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/t_sett_user_profession"
+                android:textColor="@color/blue_500"
+                />
+
+
+
+        </RelativeLayout>
+
+        <!--Account Layout -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rel_layout_user_settings"
+            android:layout_below="@+id/rel_layout_settings_user_details_id"
+            android:background="@drawable/rectangle_white"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_change_email"
+                android:id="@+id/btnGoToChangeEmailId"
+                android:textColor="#FFF"
+                android:background="@drawable/btn_login"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_change_password"
+                android:id="@+id/btnGoToChangePasswordId"
+                android:layout_below="@id/btnGoToChangeEmailId"
+                android:layout_marginTop="4dp"
+                android:textColor="#FFF"
+                android:background="@drawable/btn_login"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_logout"
+                android:id="@+id/btnLogoutId"
+                android:layout_below="@+id/btnGoToChangePasswordId"
+                android:textColor="#FFF"
+                android:background="@drawable/btn_login"
+                android:layout_marginTop="4dp"
+                />
+
+        </RelativeLayout>
+
+        <!--Delete User Layout-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_white"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/rel_layout_user_settings"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_remove_user"
+                android:textColor="#FFF"
+                android:id="@+id/btnRemoveUserId"
+                android:background="@drawable/rectangle_red_corners"
+                />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
